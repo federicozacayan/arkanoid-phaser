@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'GameFont';
+    src: url(assets/font/advanced_pixel-7.ttf);
+}
+body{
+    width: 288px;
+    height: 512px;
+    margin: auto;
+}
+:root{
+    --color: rgb(61, 167, 242);
+    --secondary-color: rgb(242, 148, 61);
+    --letters: #fff;
+}
+h1{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 100px;
+    color: var(--color);
+    font-family: 'GameFont';
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 302px;
+    font-family: 'GameFont';
+    font-size: 30px;
+    background-color:  hsla(0, 0%, 0%, 0);
+    color: var(--letters);
+    border: 1px solid var(--color);
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--color);
+    color: var(--letters);
+}
